@@ -1,0 +1,75 @@
+---
+title: "CoRL 2021 Supplementary Website"
+description: |
+  A Persistent Spatial Semantic Representation for High-level Natural Language Instruction Execution
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+# Learn more about publishing to GitHub Pages at:
+# https://rstudio.github.io/distill/publish_website.html#github-pages
+
+```
+
+# Model Behavior Examples
+
+The following videos show our agent executing various instructions.
+Each example shows:
+
+__Top-left__: The input RGB image with interaction action masks overlaid during timesteps when the agent performs an interaction action.
+The interaction action argument mask is computed as the intersection of the two masks in middle-right and bottom-right positions.
+
+__Bottom-left__: Predicted segmentation and depth used to build the semantic voxel map.
+
+__Center__: Semantic voxel map. Different colors indicate different classes of objects. The brighter colors represent voxels that are observed in the current timestep. The more washed-out colors represent voxels remembered from previous timesteps.
+Agent position is represented as a black pillar.
+The current navigation goal is shown as a red pillar.
+The 3D argument mask of the current subgoal is shown in bright yellow.
+These three special voxel classes are not part of the semantc voxel map, but are included here for visualization only.
+The text overlays show the instruction input, the current subgoal, the current action, and the state of the low-level controller (either exploring or interacting).
+
+__Top-right__: Value iteration network value function in the birds-eye view.
+White pixels are the goal location of value 1.
+Black pixels are obstacles of value -1.
+Other pixels are free or unobserved space with varying values between 0 and 1.
+
+__Middle-right__: Mask identifying all pixels that belong to the current subgoal argument class according to the most recent segmentation image.
+
+__Bottom-right__: The 3D subgoal argument mask projected in the first-person view.
+
+
+### Example 1 - Secure two discs in a bedroom safe
+__Result__: Success
+
+<iframe src="https://drive.google.com/file/d/1APKe3cR_-vliyU2elT5Un30w7PvkEdYs/preview" width="640" height="480" allow="autoplay"></iframe>
+
+
+### Example 2 - Place the sliced apple on the counter
+__Result__: Success
+
+<iframe src="https://drive.google.com/file/d/1j8BJ_ALoXGyf8a-IOkmQAg38awSWYt6f/preview" width="640" height="480" allow="autoplay"></iframe>
+
+# Predicted vs Ground-truth Segmentation and Depth
+### Example 3A - Put a clean bar of soap in a cabinet
+__Result__: Success
+
+This example uses learned monocular and depth models as required by the ALFRED benchmark.
+
+<iframe src="https://drive.google.com/file/d/1h4k2nA0bJMO9lw8uq-Bn6TSDgkS8GT6c/preview" width="640" height="480" allow="autoplay"></iframe>
+
+### Example 3B (ground truth depth and segmentation) - Put a clean bar of soap in a cabinet
+__Result__: Success
+
+This example provides ground truth depth and segmentation images at test-time.
+
+<iframe src="https://drive.google.com/file/d/1N7My6P75vUAc-LWrKrym4RqK29FgrL2M/preview" width="640" height="480" allow="autoplay"></iframe>
+
+Perfect depth and segmentation in Example 3B results in clear semantic voxel maps. As a result, the agent knows perfectly the location of every observed object, and succeeds in most interaction actions with the first attempt.
+However, the agent loses track of which sink the soap bar was placed in and toggles the wrong faucet resulting in task failure.
+
+In Example 3A, the semantic voxel map is built from predicted monocular depth and segmentation, and as a result is a more noisy. However, it still facilitates the necessary reasoning to complete the task. In this case, the agent sometimes has to re-try a couple of times before succeeding in each interaction action due to uncertainty about locations of various objects.

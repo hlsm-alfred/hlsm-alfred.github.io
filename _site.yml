@@ -1,0 +1,7 @@
+name: "hlsm-alfred-staging"
+title: "Hierarchical Language-conditioned Spatial Model"
+description: |
+  HLSM
+output_dir: "docs"
+output: distill::distill_article
+theme: theme.css
