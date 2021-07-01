@@ -46,13 +46,13 @@ __Bottom-right__: The 3D subgoal argument mask projected in the first-person vie
 ### Example 1 - Secure two discs in a bedroom safe
 __Result__: Success
 
-<iframe src="https://drive.google.com/file/d/1APKe3cR_-vliyU2elT5Un30w7PvkEdYs/preview" width="640" height="480" allow="autoplay"></iframe>
+<iframe width="1200" height="600" src="https://www.youtube.com/embed/yyKNs1pvJWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### Example 2 - Place the sliced apple on the counter
-__Result__: Success
+__Result__: Failure
 
-<iframe src="https://drive.google.com/file/d/1j8BJ_ALoXGyf8a-IOkmQAg38awSWYt6f/preview" width="640" height="480" allow="autoplay"></iframe>
+<iframe width="1200" height="600" src="https://www.youtube.com/embed/wAr2beb9YMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Predicted vs Ground-truth Segmentation and Depth
 ### Example 3A - Put a clean bar of soap in a cabinet
@@ -60,14 +60,14 @@ __Result__: Success
 
 This example uses learned monocular and depth models as required by the ALFRED benchmark.
 
-<iframe src="https://drive.google.com/file/d/1h4k2nA0bJMO9lw8uq-Bn6TSDgkS8GT6c/preview" width="640" height="480" allow="autoplay"></iframe>
+<iframe width="1200" height="600" src="https://www.youtube.com/embed/J26kuDAbDLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Example 3B (ground truth depth and segmentation) - Put a clean bar of soap in a cabinet
-__Result__: Success
+__Result__: Failure
 
 This example provides ground truth depth and segmentation images at test-time.
 
-<iframe src="https://drive.google.com/file/d/1N7My6P75vUAc-LWrKrym4RqK29FgrL2M/preview" width="640" height="480" allow="autoplay"></iframe>
+<iframe width="1200" height="600" src="https://www.youtube.com/embed/fSTKYBWkVV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Perfect depth and segmentation in Example 3B results in clear semantic voxel maps. As a result, the agent knows perfectly the location of every observed object, and succeeds in most interaction actions with the first attempt.
 However, the agent loses track of which sink the soap bar was placed in and toggles the wrong faucet resulting in task failure.

@@ -1795,22 +1795,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><strong>Bottom-right</strong>: The 3D subgoal argument mask projected in the first-person view.</p>
 <h3 id="example-1---secure-two-discs-in-a-bedroom-safe">Example 1 - Secure two discs in a bedroom safe</h3>
 <p><strong>Result</strong>: Success</p>
-<iframe src="https://drive.google.com/file/d/1APKe3cR_-vliyU2elT5Un30w7PvkEdYs/preview" width="640" height="480" allow="autoplay">
+<iframe width="1200" height="600" src="https://www.youtube.com/embed/yyKNs1pvJWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 <h3 id="example-2---place-the-sliced-apple-on-the-counter">Example 2 - Place the sliced apple on the counter</h3>
-<p><strong>Result</strong>: Success</p>
-<iframe src="https://drive.google.com/file/d/1j8BJ_ALoXGyf8a-IOkmQAg38awSWYt6f/preview" width="640" height="480" allow="autoplay">
+<p><strong>Result</strong>: Failure</p>
+<iframe width="1200" height="600" src="https://www.youtube.com/embed/wAr2beb9YMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 <h1 id="predicted-vs-ground-truth-segmentation-and-depth">Predicted vs Ground-truth Segmentation and Depth</h1>
 <h3 id="example-3a---put-a-clean-bar-of-soap-in-a-cabinet">Example 3A - Put a clean bar of soap in a cabinet</h3>
 <p><strong>Result</strong>: Success</p>
 <p>This example uses learned monocular and depth models as required by the ALFRED benchmark.</p>
-<iframe src="https://drive.google.com/file/d/1h4k2nA0bJMO9lw8uq-Bn6TSDgkS8GT6c/preview" width="640" height="480" allow="autoplay">
+<iframe width="1200" height="600" src="https://www.youtube.com/embed/J26kuDAbDLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 <h3 id="example-3b-ground-truth-depth-and-segmentation---put-a-clean-bar-of-soap-in-a-cabinet">Example 3B (ground truth depth and segmentation) - Put a clean bar of soap in a cabinet</h3>
-<p><strong>Result</strong>: Success</p>
+<p><strong>Result</strong>: Failure</p>
 <p>This example provides ground truth depth and segmentation images at test-time.</p>
-<iframe src="https://drive.google.com/file/d/1N7My6P75vUAc-LWrKrym4RqK29FgrL2M/preview" width="640" height="480" allow="autoplay">
+<iframe width="1200" height="600" src="https://www.youtube.com/embed/fSTKYBWkVV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 <p>Perfect depth and segmentation in Example 3B results in clear semantic voxel maps. As a result, the agent knows perfectly the location of every observed object, and succeeds in most interaction actions with the first attempt. However, the agent loses track of which sink the soap bar was placed in and toggles the wrong faucet resulting in task failure.</p>
 <p>In Example 3A, the semantic voxel map is built from predicted monocular depth and segmentation, and as a result is a more noisy. However, it still facilitates the necessary reasoning to complete the task. In this case, the agent sometimes has to re-try a couple of times before succeeding in each interaction action due to uncertainty about locations of various objects.</p>
