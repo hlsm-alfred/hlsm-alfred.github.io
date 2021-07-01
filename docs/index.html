@@ -1801,19 +1801,23 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><strong>Result</strong>: Failure</p>
 <iframe width="1200" height="600" src="https://www.youtube.com/embed/wAr2beb9YMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
+<h3 id="example-3---place-sliced-lettuce-into-a-bin">Example 3 - Place sliced lettuce into a bin</h3>
+<p><strong>Result</strong>: Failure</p>
+<iframe width="1200" height="600" src="https://www.youtube.com/embed/utDbnoOX9fM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 <h1 id="predicted-vs-ground-truth-segmentation-and-depth">Predicted vs Ground-truth Segmentation and Depth</h1>
-<h3 id="example-3a---put-a-clean-bar-of-soap-in-a-cabinet">Example 3A - Put a clean bar of soap in a cabinet</h3>
+<h3 id="example-4a---put-a-clean-bar-of-soap-in-a-cabinet">Example 4A - Put a clean bar of soap in a cabinet</h3>
 <p><strong>Result</strong>: Success</p>
 <p>This example uses learned monocular and depth models as required by the ALFRED benchmark.</p>
 <iframe width="1200" height="600" src="https://www.youtube.com/embed/J26kuDAbDLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
-<h3 id="example-3b-ground-truth-depth-and-segmentation---put-a-clean-bar-of-soap-in-a-cabinet">Example 3B (ground truth depth and segmentation) - Put a clean bar of soap in a cabinet</h3>
+<h3 id="example-4b-ground-truth-depth-and-segmentation---put-a-clean-bar-of-soap-in-a-cabinet">Example 4B (ground truth depth and segmentation) - Put a clean bar of soap in a cabinet</h3>
 <p><strong>Result</strong>: Failure</p>
 <p>This example provides ground truth depth and segmentation images at test-time.</p>
 <iframe width="1200" height="600" src="https://www.youtube.com/embed/fSTKYBWkVV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
-<p>Perfect depth and segmentation in Example 3B results in clear semantic voxel maps. As a result, the agent knows perfectly the location of every observed object, and succeeds in most interaction actions with the first attempt. However, the agent loses track of which sink the soap bar was placed in and toggles the wrong faucet resulting in task failure.</p>
-<p>In Example 3A, the semantic voxel map is built from predicted monocular depth and segmentation, and as a result is a more noisy. However, it still facilitates the necessary reasoning to complete the task. In this case, the agent sometimes has to re-try a couple of times before succeeding in each interaction action due to uncertainty about locations of various objects.</p>
+<p>Perfect depth and segmentation in Example 4B results in clear semantic voxel maps. As a result, the agent knows perfectly the location of every observed object, and succeeds in most interaction actions with the first attempt. However, the agent loses track of which sink the soap bar was placed in and toggles the wrong faucet resulting in task failure.</p>
+<p>In Example 4A, the semantic voxel map is built from predicted monocular depth and segmentation, and as a result is a more noisy. However, it still facilitates the necessary reasoning to complete the task. In this case, the agent sometimes has to re-try a couple of times before succeeding in each interaction action due to uncertainty about locations of various objects.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
