@@ -46,7 +46,7 @@ __Bottom-right__: The 3D subgoal argument mask projected in the first-person vie
 ### Example 1 - Secure two discs in a bedroom safe
 __Result__: Success
 
-<iframe width="1200" height="600" src="https://www.youtube.com/embed/yyKNs1pvJWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1200" height="600" src="https://www.youtube.com/embed/OnjIrpayuHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### Example 2 - Place the sliced apple on the counter
