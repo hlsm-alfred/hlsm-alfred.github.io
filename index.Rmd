@@ -1,7 +1,7 @@
 ---
-title: "CoRL 2021 Supplementary Website"
+title: "A Persistent Spatial Semantic Representation for High-level Natural Language Instruction Execution"
 description: |
-  A Persistent Spatial Semantic Representation for High-level Natural Language Instruction Execution
+  Supplementary Material Website
 site: distill::distill_website
 ---
 
